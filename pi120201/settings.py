@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'pi120201.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pi1-eafit-db-sp',                     
+        'USER': 'jsperezs@pi1-eafit-db-sp',                     
+        'PASSWORD': 'fkeNEE78',                  
+        'HOST': 'pi1-eafit-db-sp.mysql.database.azure.com',                     
+        'PORT': '3306',
     }
 }
 

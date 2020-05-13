@@ -20,7 +20,8 @@ from rest_framework import routers
 from temperature import views
 
 router = routers.DefaultRouter()
-router.register(r'temperatures', views.TemperatureViewSet)
+#router.register(r'temperatures', views.TemperatureViewSet)
+router.register(r'mediciones', views.MedicionesViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
